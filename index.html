@@ -1,20 +1,17 @@
 <html>
-
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <title>A.M Insta pt3</title>
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-    crossorigin="anonymous" />
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" crossorigin="anonymous" />
 </head>
 
 <body class="bg-light">
 
   <!-- Navbar -->
   <nav class="navbar navbar-expand-md bg-white border-bottom">
-    <div class="container d-flex justify-content-between align-items-center py-2">
+    <div class="container d-flex flex-column flex-md-row gap-2 justify-content-between align-items-center py-2">
       <div class="d-flex align-items-center gap-2">
         <i class="fa-brands fa-instagram fs-4"></i>
         <h5 class="mb-0">Instagram</h5>
@@ -25,18 +22,16 @@
           Create a new post
         </button>
 
+    <!---dropdown-->
         <div class="dropdown">
-          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown"
-            aria-expanded="false">
+          <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
             <i class="fa-solid fa-gear"></i>
           </button>
           <ul class="dropdown-menu dropdown-menu-end">
             <li><a class="dropdown-item" href="#">Profile</a></li>
             <li><a class="dropdown-item" href="#">Accessibility</a></li>
             <li><a class="dropdown-item" href="#">Data</a></li>
-            <li>
-              <hr class="dropdown-divider">
-            </li>
+            <li><hr class="dropdown-divider"></li>
             <li><a class="dropdown-item text-danger" href="#">Log Out</a></li>
           </ul>
         </div>
@@ -54,12 +49,13 @@
         </div>
         <div class="modal-body">
           <h6>Caption:</h6>
-          <textarea class="form-control" placeholder="Add the caption of your post here"
-            id="floatingTextarea"></textarea>
-          <button type="button" class="btn btn-light border pt-2 mt-3"><i
-              class="fa-solid fa-camera text-black"></i></button>
-          <button type="button" class="btn btn-light border pt-2 mt-3"><i
-              class="fa-solid fa-location-dot text-black"></i></button>
+          <textarea class="form-control" placeholder="Add the caption of your post here" id="floatingTextarea"></textarea>
+          <button type="button" class="btn btn-light border pt-2 mt-3">
+            <i class="fa-solid fa-camera text-black"></i>
+          </button>
+          <button type="button" class="btn btn-light border pt-2 mt-3">
+            <i class="fa-solid fa-location-dot text-black"></i>
+          </button>
         </div>
         <div class="modal-footer">
           <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
@@ -74,14 +70,12 @@
     <div class="text-center">
       <ul class="nav nav-pills d-inline-flex justify-content-center gap-2" id="pills-tab" role="tablist">
         <li class="nav-item" role="presentation">
-          <button class="nav-link active" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home"
-            type="button" role="tab" aria-controls="pills-home" aria-selected="true">
+          <button class="nav-link active d-flex align-items-center justify-content-center" id="pills-home-tab" data-bs-toggle="pill" data-bs-target="#pills-home" type="button" role="tab" aria-controls="pills-home" aria-selected="true">
             <i class="fa-solid fa-table-cells"></i>
           </button>
         </li>
         <li class="nav-item" role="presentation">
-          <button class="nav-link" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile"
-            type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
+          <button class="nav-link d-flex align-items-center justify-content-center" id="pills-profile-tab" data-bs-toggle="pill" data-bs-target="#pills-profile" type="button" role="tab" aria-controls="pills-profile" aria-selected="false">
             <i class="fa-solid fa-square"></i>
           </button>
         </li>
@@ -94,160 +88,179 @@
       <div class="tab-pane fade show active" id="pills-home" role="tabpanel" aria-labelledby="pills-home-tab">
         <div class="row g-3">
           <div class="col-12 col-md-6 col-lg-4">
-            <img
-              src="https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_crashteamracingnitrofueled/NSwitch_CrashTeamRacingNitroFueled_04.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_crashteamracingnitrofueled/NSwitch_CrashTeamRacingNitroFueled_04.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://www.gamereactor.es/media/grtv/43/434333_w926.jpg" class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.gamereactor.es/media/grtv/43/434333_w926.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+          </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img
-              src="https://www.gamesatlas.com/igallery/1-100/CTR_035_Adventure_CrashCove_Cortex_TinyTiger-35-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_035_Adventure_CrashCove_Cortex_TinyTiger-35-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATf2rSSbE_P7YKKSBl9JVveMv0pYeaJV8dg&s"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATf2rSSbE_P7YKKSBl9JVveMv0pYeaJV8dg&s" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+          </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_013_TigerTemple_Pura_Polar_Dingodile-13-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_013_TigerTemple_Pura_Polar_Dingodile-13-1080.jpg" class="card-img-top w-100 object-fit-cover" alt="">
+          </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_025_TinyTemple_TinyTiger_Pura-25-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_025_TinyTemple_TinyTiger_Pura-25-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+          </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_044_PolarPass_Dingodile-44-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_044_PolarPass_Dingodile-44-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="">
+          </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_056_CrashCove_NGin_Dingodile_Cortex-56-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_056_CrashCove_NGin_Dingodile_Cortex-56-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+          </div>
           </div>
           <div class="col-12 col-md-6 col-lg-4">
-            <img src="https://media.tenor.com/2ylwpgUSgzQAAAAe/uka-uka-vs-aku-aku.png" class="card-img-top" alt="">
+            <div class="ratio ratio-1x1">
+            <img src="https://media.tenor.com/2ylwpgUSgzQAAAAe/uka-uka-vs-aku-aku.png" class="card-img-top w-100 h-100 object-fit-cover" alt="">
+          </div>
           </div>
         </div>
       </div>
-
 
       <!-- comienzo cards -->
       <div class="tab-pane fade" id="pills-profile" role="tabpanel" aria-labelledby="pills-profile-tab">
         <div class="container mt-3 d-flex flex-column align-items-center gap-3">
 
-          <div class="card" style="max-width: 500px; width: 100%;">
+          <div class="card w-100" style="max-width: 500px;">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class="mb-0">Crash Bandicoot</h5><small>29/02</small>
             </div>
-            <img
-              src="https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_crashteamracingnitrofueled/NSwitch_CrashTeamRacingNitroFueled_04.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-16x9">
+            <img src="https://www.nintendo.com/eu/media/images/06_screenshots/games_5/nintendo_switch_6/nswitch_crashteamracingnitrofueled/NSwitch_CrashTeamRacingNitroFueled_04.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="">
+            </div>
             <div class="card-body">
-              <span class="fw-bolder">62174 likes</span> </br>
+              <span class="fw-bolder">62174 likes</span><br>
               <p class="card-text">Older brother, looks like he's always on some heavy narcotics all the time, has a good heart, more power than brain.</p>
             </div>
           </div>
 
-          <div class="card" style="max-width: 500px; width: 100%;">
+          <div class="card w-100" style="max-width: 500px;">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class="mb-0">Coco Bandicoot</h5><small>29/02</small>
             </div>
-            <img src="https://www.gamereactor.es/media/grtv/43/434333_w926.jpg" class="card-img-top" alt="">
+            <div class="ratio ratio-16x9">
+            <img src="https://www.gamereactor.es/media/grtv/43/434333_w926.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
             <div class="card-body">
-              <span class="fw-bolder">EVERYBODY Likes</span> </br>
+              <span class="fw-bolder">EVERYBODY Likes</span><br>
               <p class="card-text">Younger Sister, the brains of the operation, a diva with a laptop, total hackerWOman ;3</p>
             </div>
           </div>
 
-          <div class="card" style="max-width: 500px; width: 100%;">
+          <div class="card w-100" style="max-width: 500px;">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class="mb-0">Dr. Neo Cortex</h5><small>28/03</small>
             </div>
-            <img
-              src="https://www.gamesatlas.com/igallery/1-100/CTR_035_Adventure_CrashCove_Cortex_TinyTiger-35-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-16x9">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_035_Adventure_CrashCove_Cortex_TinyTiger-35-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover" alt="">
+            </div>
             <div class="card-body">
-              <span class="fw-bolder">4 likes</span> </br>
+              <span class="fw-bolder">4 likes</span><br>
               <p class="card-text">Evil genius with a huge head, tiny patience, and a “mad scientist” vibe that never goes out of style.</p>
             </div>
           </div>
 
-          <div class="card" style="max-width: 500px; width: 100%;">
+          <div class="card w-100" style="max-width: 500px;">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class="mb-0">Polar the Bear</h5><small>27/04</small>
             </div>
-            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATf2rSSbE_P7YKKSBl9JVveMv0pYeaJV8dg&s"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-16x9">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQATf2rSSbE_P7YKKSBl9JVveMv0pYeaJV8dg&s" class="card-img-top w-100 h-100 object-fit-cover" alt="">
+            </div>
             <div class="card-body">
-              <span class="fw-bolder">749 likes</span> </br>
+              <span class="fw-bolder">749 likes</span><br>
               <p class="card-text">Chill polar bear who clearly skipped leg day, loves fish, and photobombs everyone.</p>
             </div>
           </div>
 
-          <div class="card" style="max-width: 500px; width: 100%;">
+          <div class="card w-100" style="max-width: 500px;">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class="mb-0">Pura</h5><small>26/05</small>
             </div>
-            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_013_TigerTemple_Pura_Polar_Dingodile-13-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-16x9">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_013_TigerTemple_Pura_Polar_Dingodile-13-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
             <div class="card-body">
-              <span class="fw-bolder">1000 likes</span> </br>
+              <span class="fw-bolder">1000 likes</span><br>
               <p class="card-text">Tiny, adorable tiger cub with a sassy attitude and more courage than sense.</p>
             </div>
           </div>
 
-          <div class="card" style="max-width: 500px; width: 100%;">
+          <div class="card w-100" style="max-width: 500px;">
             <div class="card-header d-flex justify-content-between align-items-center">
               <h5 class="mb-0">Tiny Tiger</h5><small>25/06</small>
             </div>
-            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_025_TinyTemple_TinyTiger_Pura-25-1080.jpg"
-              class="card-img-top" alt="">
+            <div class="ratio ratio-16x9">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_025_TinyTemple_TinyTiger_Pura-25-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
             <div class="card-body">
-              <span class="fw-bolder">9999 likes</span> </br>
+              <span class="fw-bolder">9999 likes</span><br>
               <p class="card-text">Big, burly tiger with a short fuse, loves smashing things, and secretly has a soft side.</p>
             </div>
-          
-            <div class="card" style="max-width: 500px; width: 100%;">
-              <div class="card-header d-flex justify-content-between align-items-center">
-                <h5 class="mb-0">Dingodile</h5><small>25/06</small>
-              </div>
-              <img src="https://www.gamesatlas.com/igallery/1-100/CTR_044_PolarPass_Dingodile-44-1080.jpg"
-                class="card-img-top" alt="">
-              <div class="card-body">
-                <span class="fw-bolder">101 likes</span> </br>
-                <p class="card-text">Half dingo, half crocodile, full chaos—wields a flamethrower like it’s a fashion accessory.</p>
-              </div>
-
-              <div class="card" style="max-width: 500px; width: 100%;">
-                <div class="card-header d-flex justify-content-between align-items-center">
-                  <h5 class="mb-0">N. Gin</h5><small>25/06</small>
-                </div>
-                <img src="https://www.gamesatlas.com/igallery/1-100/CTR_056_CrashCove_NGin_Dingodile_Cortex-56-1080.jpg"
-                  class="card-img-top" alt="">
-                <div class="card-body">
-                  <span class="fw-bolder">1 like</span> </br>
-                  <p class="card-text">Mad scientist robot sidekick with a spinning head and a talent for explosions.</p>
-                </div>
-
-                <div class="card" style="max-width: 500px; width: 100%;">
-                  <div class="card-header d-flex justify-content-between align-items-center">
-                    <h5 class="mb-0">Aku Aku & Uka Uka</h5><small>25/06</small>
-                  </div>
-                  <img src="https://media.tenor.com/2ylwpgUSgzQAAAAe/uka-uka-vs-aku-aku.png"
-                    class="card-img-top" alt="">
-                  <div class="card-body">
-                    <span class="fw-bolder">455 likes</span> </br>
-                    <p class="card-text">Magical mask bros—one wise and chill, the other evil and grumpy, both always judging your life choices.
-                  </p>
-                  </div>
-
-
           </div>
+
+          <div class="card w-100" style="max-width: 500px;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">Dingodile</h5><small>25/06</small>
+            </div>
+            <div class="ratio ratio-16x9">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_044_PolarPass_Dingodile-44-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover" style="height: 18rem;" alt="">
+            </div>
+            <div class="card-body">
+              <span class="fw-bolder">101 likes</span><br>
+              <p class="card-text">Half dingo, half crocodile, full chaos—wields a flamethrower like it’s a fashion accessory.</p>
+            </div>
+          </div>
+
+          <div class="card w-100" style="max-width: 500px;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">N. Gin</h5><small>25/06</small>
+            </div>
+            <div class="ratio ratio-16x9">
+            <img src="https://www.gamesatlas.com/igallery/1-100/CTR_056_CrashCove_NGin_Dingodile_Cortex-56-1080.jpg" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
+            <div class="card-body">
+              <span class="fw-bolder">1 like</span><br>
+              <p class="card-text">Mad scientist robot sidekick with a spinning head and a talent for explosions.</p>
+            </div>
+          </div>
+
+          <div class="card w-100" style="max-width: 500px;">
+            <div class="card-header d-flex justify-content-between align-items-center">
+              <h5 class="mb-0">Aku Aku & Uka Uka</h5><small>25/06</small>
+            </div>
+            <div class="ratio ratio-16x9">
+            <img src="https://media.tenor.com/2ylwpgUSgzQAAAAe/uka-uka-vs-aku-aku.png" class="card-img-top w-100 h-100 object-fit-cover"  alt="">
+            </div>
+            <div class="card-body">
+              <span class="fw-bolder">455 likes</span><br>
+              <p class="card-text">Magical mask bros—one wise and chill, the other evil and grumpy, both always judging your life choices.</p>
+            </div>
+          </div>
+
         </div>
+      </div>
+    </div>
+  </div>
 
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-
 </html>
